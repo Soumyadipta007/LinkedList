@@ -7,9 +7,14 @@ namespace LinkedList
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
+            list.Add1(56);
+            list.Add1(30);
+            list.Add1(70);
+            list.Display();
+            list = new LinkedList();
+            list.Add2(70);
+            list.Add2(30);
+            list.Add2(56);
             list.Display();
         }
     }
