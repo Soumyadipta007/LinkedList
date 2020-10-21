@@ -40,7 +40,7 @@ namespace LinkedList
             Node temp = this.head;
             if (temp == null)
             {
-                Console.WriteLine("Linked list is empty");
+                Console.WriteLine("Linked list is empty.");
                 return;
             }
             Console.WriteLine("Sequence of LinkedList :-");
