@@ -16,6 +16,11 @@ namespace LinkedList
             list.Add2(30);
             list.Add2(56);
             list.Display();
+            list = new LinkedList();
+            list.Add1(56);
+            list.Add1(70);
+            list.InsertAtParticularPosition(2, 30);
+            list.Display();
         }
     }
 }
