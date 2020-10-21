@@ -64,6 +64,14 @@ namespace LinkedList
             }
             return head;
         }
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            Node firstElement = this.head;
+            this.head = this.head.next;
+            return firstElement;
+        }
         internal void Display()
         {
             Node temp = this.head;
