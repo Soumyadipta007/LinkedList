@@ -32,7 +32,7 @@ namespace LinkedList
             sortedLinkedList.Add(30);
             sortedLinkedList.Add(40);
             sortedLinkedList.Add(70);
-            Console.WriteLine("Sorted Linked List- ");
+            Console.WriteLine("Sorted Linked List-");
             sortedLinkedList.Display();
         }
     }
