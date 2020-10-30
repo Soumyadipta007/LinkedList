@@ -6,17 +6,17 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList list = new LinkedList();
+            LinkedListClass list = new LinkedListClass();
             list.Add1(56);
             list.Add1(30);
             list.Add1(70);
             list.Display();
-            list = new LinkedList();
+            list = new LinkedListClass();
             list.Add2(70);
             list.Add2(30);
             list.Add2(56);
             list.Display();
-            list = new LinkedList();
+            list = new LinkedListClass();
             list.Add1(56);
             list.Add1(70);
             list.InsertAtParticularPosition(2, 30);

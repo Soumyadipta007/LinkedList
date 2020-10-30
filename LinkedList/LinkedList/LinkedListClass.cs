@@ -4,10 +4,10 @@ using System.Text;
 
 namespace LinkedList
 {
-    class LinkedList
+    public class LinkedListClass
     {
         internal Node head;
-        internal void Add1(int data)
+        public void Add1(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -102,6 +102,18 @@ namespace LinkedList
                 temp = temp.next;
             }
             Console.WriteLine();
+        }
+        public Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
         }
     }
 }
