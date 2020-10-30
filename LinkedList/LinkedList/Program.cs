@@ -27,6 +27,13 @@ namespace LinkedList
             list.Display();
             Console.WriteLine("Last element popped out of the Linked List- " + list.RemoveLastNode().data);
             list.Display();
+            SortedLinkedListClass sortedLinkedList = new SortedLinkedListClass();
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
+            Console.WriteLine("Sorted Linked List- ");
+            sortedLinkedList.Display();
         }
     }
 }
