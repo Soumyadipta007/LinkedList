@@ -129,5 +129,38 @@ namespace LinkedList
             }
             return position;
         }
+        public void DeleteNode(int deleteData)
+        {
+            if (this.head == null)
+                return;
+            else if (this.head.data == deleteData && this.head.next == null)
+                this.head = null;
+            else if (this.head.data == deleteData)
+                this.head = this.head.next;
+            else
+            {
+                Node temp = this.head;
+                while (temp.next != null)
+                {
+                    if (temp.next.data == deleteData)
+                    {
+                        temp.next = temp.next.next;
+                        break;
+                    }
+                    temp = temp.next;
+                }
+            }   
+        }
+        public int size()
+        {
+            int size = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                size++;
+                temp = temp.next;
+            }
+            return size;
+        }
     }
 }

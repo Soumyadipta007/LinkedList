@@ -27,5 +27,17 @@ namespace UnitTestProject1
             int position = list.findPosition(40);
             Assert.AreEqual(3, 3);
         }
+        [TestMethod]
+        public void DeleteAndGetSize()
+        {
+            LinkedListClass list = new LinkedListClass();
+            list.Add1(56);
+            list.Add1(30);
+            list.Add1(40);
+            list.Add1(70);
+            list.DeleteNode(40);
+            int size = list.size();
+            Assert.AreEqual(3, 3);
+        }
     }
 }
